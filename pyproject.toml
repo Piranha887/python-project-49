@@ -11,6 +11,9 @@ packages = [
 [tool.poetry.dependencies]
 python = "^3.9"
 prompt = "^0.4.1"
+asciinema = "^2.3.0"
+coverage = "^7.3.1"
+make = "^0.1.6.post2"
 
 [tool.poetry.group.dev.dependencies]
 flake8 = "^6.1.0"
@@ -21,3 +24,4 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
+brain-even = "brain_games.scripts.brain_even:main"
