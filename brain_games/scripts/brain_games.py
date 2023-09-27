@@ -1,16 +1,11 @@
 #!/usr/bin/env python3
-import prompt
-
-
-def welcome_user():
-    print("Welcome to the Brain Games!")
-    name = prompt.string('May I have your name? ')
-    print(f"Hello, {name}!")
+from brain_games.cli import welcome_user
 
 
 def main():
+    print('Welcome to the Brain Games!')
     welcome_user()
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
