@@ -10,7 +10,7 @@ def check_parity(num):
         return 'no'
 
 
-def generate_number(min_num_rand, max_num_rand):
+def generation(min_num_rand, max_num_rand):
     number = randint(min_num_rand, max_num_rand)
     correct_answer = check_parity(number)
     return number, correct_answer
