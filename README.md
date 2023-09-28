@@ -24,4 +24,4 @@
 Запуск игры
 $ brain-even
 
-https://asciinema.org/a/cSNABxO2Vw5ZxT3oyNnOJMPGi
+https://asciinema.org/a/RMBrosnA87ijBPcPCBIZU7W4h
