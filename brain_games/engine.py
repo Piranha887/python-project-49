@@ -14,7 +14,7 @@ def start_game(game):
 
     for _ in range(count):
         question, correct_answer = \
-            game.generation(min_num_rand, max_num_rand)
+            game.generate_question(min_num_rand, max_num_rand)
 
         print(f'Question: {question}')
 
