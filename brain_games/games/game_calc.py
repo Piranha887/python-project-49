@@ -1,13 +1,11 @@
 import random
 
-RULES = 'What is the result of the expression?'
+# Правила игры
+RULES = 'Чему равен результат выражения?'
 
 
-def calculate_expression(expression):
-    number1, operator, number2 = expression.split()
-    number1 = int(number1)
-    number2 = int(number2)
-
+def calculate_expression(number1, operator, number2):
+    """Вычисление результата выражения."""
     if operator == '+':
         return number1 + number2
     elif operator == '-':
@@ -16,11 +14,12 @@ def calculate_expression(expression):
         return number1 * number2
 
 
-def generation(min_num_rand, max_num_rand):
+def generate_question(min_num, max_num):
+    """Генерация случайного выражения и правильного ответа."""
     operators = ['+', '-', '*']
-    number1 = random.randint(min_num_rand, max_num_rand)
-    number2 = random.randint(min_num_rand, max_num_rand)
+    number1 = random.randint(min_num, max_num)
+    number2 = random.randint(min_num, max_num)
     operator = random.choice(operators)
     expression = f'{number1} {operator} {number2}'
-    correct_answer = str(calculate_expression(expression))
+    correct_answer = str(calculate_expression(number1, operator, number2))
     return expression, correct_answer
