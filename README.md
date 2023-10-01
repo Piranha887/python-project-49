@@ -2,6 +2,8 @@
 
 [![Actions Status](https://github.com/Piranha887/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/Piranha887/python-project-49/actions)
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/b470cfa107a2815b7ea9/maintainability)](https://codeclimate.com/github/Piranha887/python-project-49/maintainability)
+
 # Игры разума
 
 «Игры разума» — набор из пяти консольных игр, построенных по принципу популярных мобильных приложений для прокачки
@@ -29,7 +31,7 @@ $ make brain-even
 
 ### Пример игры
 
-https://asciinema.org/a/RMBrosnA87ijBPcPCBIZU7W4h
+[![asciicast](https://asciinema.org/a/RMBrosnA87ijBPcPCBIZU7W4h)
 
 ## Игра «Калькулятор»
 
@@ -44,7 +46,7 @@ $ make brain-calc
 
 ### Пример игры
 
-https://asciinema.org/a/kYFyHd17oY7xM3cX7ac4GPs0x
+[![asciicast](https://asciinema.org/a/kYFyHd17oY7xM3cX7ac4GPs0x)
 
 ## Игра «Наибольший общий делитель»
 
@@ -59,7 +61,7 @@ $ make brain-gcd
 
 ### Пример игры
 
-https://asciinema.org/a/0F37u3EJiqwG8gTU5O1z3pu1C
+[![asciicast](https://asciinema.org/a/0F37u3EJiqwG8gTU5O1z3pu1C)
 
 ## Игра «Арифметическая прогрессия»
 
@@ -74,7 +76,7 @@ $ make brain-progression
 
 ### Пример игры
 
-https://asciinema.org/a/Qe96rkduLprOT8ScyJbhKgCi5
+[![asciicast](https://asciinema.org/a/Qe96rkduLprOT8ScyJbhKgCi5)
 
 ## Игра «Простое ли число?»
 
@@ -89,4 +91,4 @@ $ make brain-prime
 
 ### Пример игры
 
-https://asciinema.org/a/rQZKXWYdBThACNVQp6lVuK3Gq
+[![asciicast](https://asciinema.org/a/rQZKXWYdBThACNVQp6lVuK3Gq)
