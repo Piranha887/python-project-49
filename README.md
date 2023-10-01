@@ -26,12 +26,12 @@
 ### Запуск игры
 
 ```shell
-$ make brain-even
+$ brain-even
 ```
 
 ### Пример игры
 
-[![asciicast](https://asciinema.org/a/RMBrosnA87ijBPcPCBIZU7W4h)
+<script src="https://asciinema.org/a/RMBrosnA87ijBPcPCBIZU7W4h" id="asciicast-14" async></script>
 
 ## Игра «Калькулятор»
 
@@ -41,12 +41,12 @@ $ make brain-even
 ### Запуск игры
 
 ```shell
-$ make brain-calc
+$ brain-calc
 ```
 
 ### Пример игры
 
-[![asciicast](https://asciinema.org/a/kYFyHd17oY7xM3cX7ac4GPs0x)
+<script src="https://asciinema.org/a/kYFyHd17oY7xM3cX7ac4GPs0x" id="asciicast-14" async></script>
 
 ## Игра «Наибольший общий делитель»
 
@@ -56,12 +56,12 @@ $ make brain-calc
 ### Запуск игры
 
 ```shell
-$ make brain-gcd
+$ brain-gcd
 ```
 
 ### Пример игры
 
-[![asciicast](https://asciinema.org/a/0F37u3EJiqwG8gTU5O1z3pu1C)
+<script src="https://asciinema.org/a/0F37u3EJiqwG8gTU5O1z3pu1C" id="asciicast-14" async></script>
 
 ## Игра «Арифметическая прогрессия»
 
@@ -71,12 +71,12 @@ $ make brain-gcd
 ### Запуск игры
 
 ```shell
-$ make brain-progression
+$ brain-progression
 ```
 
 ### Пример игры
 
-[![asciicast](https://asciinema.org/a/Qe96rkduLprOT8ScyJbhKgCi5)
+<script src="https://asciinema.org/a/Qe96rkduLprOT8ScyJbhKgCi5" id="asciicast-14" async></script>
 
 ## Игра «Простое ли число?»
 
@@ -86,9 +86,9 @@ $ make brain-progression
 ### Запуск игры
 
 ```shell
-$ make brain-prime
+$ brain-prime
 ```
 
 ### Пример игры
 
-[![asciicast](https://asciinema.org/a/rQZKXWYdBThACNVQp6lVuK3Gq)
+<script src="https://asciinema.org/a/rQZKXWYdBThACNVQp6lVuK3Gq" id="asciicast-14" async></script>
