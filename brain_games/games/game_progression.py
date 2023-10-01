@@ -1,5 +1,7 @@
 import random
 
+RULES = 'What number is missing in the progression?'
+
 
 def generate_question(min_num, max_num):
     """Функция для генерации арифметической прогрессии"""
