@@ -1,9 +1,10 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "BrainGames with numbers"
 authors = ["Piranha887 <ilyanikitin889@gmail.com>"]
 readme = "README.md"
+repository = "https://github.com/piranha887/python-project-49"
 packages = [
     { include = "brain_games" },
 ]
