@@ -31,7 +31,7 @@ $ brain-even
 
 ### Пример игры
 
-<script src="https://asciinema.org/a/RMBrosnA87ijBPcPCBIZU7W4h" id="asciicast-14" async></script>
+[![](https://i.imgur.com/ruOVPFI.png)](https://asciinema.org/a/7MoPraeDHNJqI8Ym2hsk8Eij5)
 
 ## Игра «Калькулятор»
 
@@ -46,7 +46,7 @@ $ brain-calc
 
 ### Пример игры
 
-<script src="https://asciinema.org/a/kYFyHd17oY7xM3cX7ac4GPs0x" id="asciicast-14" async></script>
+[![](https://i.imgur.com/84QuXCG.png)](https://asciinema.org/a/LdlmQcteiWkPR4S4EjUzIYOcP)
 
 ## Игра «Наибольший общий делитель»
 
@@ -61,7 +61,7 @@ $ brain-gcd
 
 ### Пример игры
 
-<script src="https://asciinema.org/a/0F37u3EJiqwG8gTU5O1z3pu1C" id="asciicast-14" async></script>
+[![](https://i.imgur.com/V0gMOeb.png)](https://asciinema.org/a/PMaYmLYB5N9Wybu4q9ijsUDa0)
 
 ## Игра «Арифметическая прогрессия»
 
@@ -76,7 +76,7 @@ $ brain-progression
 
 ### Пример игры
 
-<script src="https://asciinema.org/a/Qe96rkduLprOT8ScyJbhKgCi5" id="asciicast-14" async></script>
+[![](https://i.imgur.com/A2049nA.png)](https://asciinema.org/a/MvxgDxhlDAxsoH8666FzFSYsG)
 
 ## Игра «Простое ли число?»
 
@@ -91,4 +91,4 @@ $ brain-prime
 
 ### Пример игры
 
-<script src="https://asciinema.org/a/rQZKXWYdBThACNVQp6lVuK3Gq" id="asciicast-14" async></script>
+[![](https://i.imgur.com/VFJtHFu.png](https://asciinema.org/a/933F5TOJA4WV6mn5YG4klKFaF)
