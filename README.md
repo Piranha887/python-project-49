@@ -91,4 +91,4 @@ $ brain-prime
 
 ### Пример игры
 
-[![](https://i.imgur.com/VFJtHFu.png](https://asciinema.org/a/933F5TOJA4WV6mn5YG4klKFaF)
+[![](https://i.imgur.com/VFJtHFu.png)](https://asciinema.org/a/933F5TOJA4WV6mn5YG4klKFaF)
