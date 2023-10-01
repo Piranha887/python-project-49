@@ -1,7 +1,7 @@
 import random
 
 
-def generate_progression(min_num, max_num):
+def generate_question(min_num, max_num):
     """Функция для генерации арифметической прогрессии"""
     step_min = 1
     step_max = 10
