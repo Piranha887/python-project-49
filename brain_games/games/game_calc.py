@@ -1,7 +1,7 @@
 import random
 
 # Правила игры
-RULES = 'Чему равен результат выражения?'
+RULES = 'What is the result of the expression?'
 
 
 def calculate_expression(number1, operator, number2):
