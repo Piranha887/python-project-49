@@ -9,6 +9,11 @@ packages = [
     { include = "brain_games" },
 ]
 
+classifiers = [
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+
 [tool.poetry.dependencies]
 python = "^3.9"
 prompt = "^0.4.1"
