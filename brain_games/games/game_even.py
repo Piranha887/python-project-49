@@ -1,6 +1,4 @@
-from random import randint
-
-RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
+from brain_games.utils.generate_number import generate_random_number
 
 
 def is_even(num):
@@ -8,8 +6,8 @@ def is_even(num):
     return 'yes' if num % 2 == 0 else 'no'
 
 
-def generate_question(min_num, max_num):
+def generate_question_even():
     """Генерирует случайное число и верный ответ"""
-    number = randint(min_num, max_num)
+    number = generate_random_number()
     correct_answer = is_even(number)
     return number, correct_answer
