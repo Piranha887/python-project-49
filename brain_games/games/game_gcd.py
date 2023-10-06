@@ -10,7 +10,8 @@ def is_gcd(number1, number2):
 
 def generate_question_gcd():
     """Генерация случайных чисел, вопроса и правильного ответа"""
-    number1, number2 = generate_random_number()
+    number1 = generate_random_number()
+    number2 = generate_random_number()
     question = f'{number1} {number2}'
     correct_answer = is_gcd(number1, number2)
     return question, correct_answer
