@@ -18,7 +18,8 @@ def calculate_expression(number1, operator, number2):
 def generate_question_calc():
     """Генерация случайного выражения и правильного ответа."""
     operators = [OPERATOR_PLUS, OPERATOR_MINUS, OPERATOR_MULTIPLY]
-    number1, number2 = generate_random_number()
+    number1 = generate_random_number()
+    number2 = generate_random_number()
     operator = random.choice(operators)
     expression = f'{number1} {operator} {number2}'
     correct_answer = str(calculate_expression(number1, operator, number2))
