@@ -1,21 +1,19 @@
 import random
 
-RULES = 'What number is missing in the progression?'
+from brain_games.constants import STEP_MIN, STEP_MAX, \
+    ELEMENT_COUNT_MIN, ELEMENT_COUNT_MAX
+from brain_games.utils.generate_number import generate_random_number
 
 
-def generate_question(min_num, max_num):
+def generate_question_progression():
     """Функция для генерации арифметической прогрессии"""
-    step_min = 1
-    step_max = 10
-    element_count_min = 5
-    element_count_max = 10
 
     # Генерация начального числа прогрессии
-    number_start = random.randint(min_num, max_num)
+    number_start = generate_random_number()
     # Генерация шага прогрессии
-    step = random.randint(step_min, step_max)
+    step = random.randint(STEP_MIN, STEP_MAX)
     # Генерация количества элементов прогрессии
-    elements = random.randint(element_count_min, element_count_max)
+    elements = random.randint(ELEMENT_COUNT_MIN, ELEMENT_COUNT_MAX)
 
     element_list = []
     for _ in range(elements):
