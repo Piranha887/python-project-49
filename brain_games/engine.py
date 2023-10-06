@@ -1,20 +1,16 @@
 import prompt
 
+from brain_games.cli import welcome_user
+from brain_games.constants import COUNT_ATTEMPTS
 
-def start_game(game):
-    min_num_rand = 0
-    max_num_rand = 100
-    count = 3
 
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!')
+def start_game(rules, generate_question):
+    name = welcome_user()
 
-    print(game.RULES)
+    print(rules)
 
-    for _ in range(count):
-        question, correct_answer = \
-            game.generate_question(min_num_rand, max_num_rand)
+    for _ in range(COUNT_ATTEMPTS):
+        question, correct_answer = generate_question()
 
         print(f'Question: {question}')
 
@@ -29,6 +25,3 @@ def start_game(game):
             return
 
     print(f'Congratulations, {name}!')
-
-# Пример использования:
-# start_game(some_game)
