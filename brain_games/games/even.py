@@ -1,13 +1,13 @@
-from brain_games.utils.generate_number import generate_random_number
+from brain_games.utils import generate_random_number
 
 
-def is_even(num):
+def is_even(num) -> bool:
     """Проверяет чётность числа"""
-    return 'yes' if num % 2 == 0 else 'no'
+    return num % 2 == 0
 
 
 def generate_question_even():
     """Генерирует случайное число и верный ответ"""
     number = generate_random_number()
-    correct_answer = is_even(number)
+    correct_answer = 'yes' if is_even(number) else 'no'
     return number, correct_answer
