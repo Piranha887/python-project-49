@@ -1,26 +1,29 @@
 import random
 
-from brain_games.constants import OPERATOR_PLUS, OPERATOR_MINUS, \
-    OPERATOR_MULTIPLY
-from brain_games.utils.generate_number import generate_random_number
+from brain_games.utils import generate_random_number
 
 
-def calculate_expression(number1, operator, number2):
+def calculate_expression(number1, operator, number2) -> str:
     """Вычисление результата выражения."""
-    if operator == OPERATOR_PLUS:
-        return number1 + number2
-    elif operator == OPERATOR_MINUS:
-        return number1 - number2
-    elif operator == OPERATOR_MULTIPLY:
-        return number1 * number2
+    if operator == '+':  # Используем строковые символы вместо констант
+        return str(number1 + number2)
+    elif operator == '-':
+        return str(number1 - number2)
+    elif operator == '*':
+        return str(number1 * number2)
+    else:
+        raise ValueError("Неподдерживаемый оператор")
+
+
+def choice_operator() -> str:
+    operators = ['+', '-', '*']
+    return random.choice(operators)
 
 
 def generate_question_calc():
     """Генерация случайного выражения и правильного ответа."""
-    operators = [OPERATOR_PLUS, OPERATOR_MINUS, OPERATOR_MULTIPLY]
-    number1 = generate_random_number()
-    number2 = generate_random_number()
-    operator = random.choice(operators)
+    number1, number2 = generate_random_number()
+    operator = choice_operator()
     expression = f'{number1} {operator} {number2}'
-    correct_answer = str(calculate_expression(number1, operator, number2))
+    correct_answer = calculate_expression(number1, operator, number2)
     return expression, correct_answer
