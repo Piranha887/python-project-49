@@ -1,7 +1,7 @@
-from brain_games.utils.generate_number import generate_random_number
+from brain_games.utils import generate_random_number
 
 
-def is_prime(number):
+def is_prime(number) -> bool:
     """Проверка, является ли число простым"""
     if number < 2:
         return False
