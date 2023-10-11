@@ -4,10 +4,10 @@ from brain_games.cli import welcome_user
 from brain_games.constants import COUNT_ATTEMPTS
 
 
-def start_game(rules, generate_question):
-    name = welcome_user()
+def start_game(rule, generate_question):
+    name = prompt.string('Welcome to the Brain Games!\nMay I have your name? ')
 
-    print(rules)
+    print(rule)
 
     for _ in range(COUNT_ATTEMPTS):
         question, correct_answer = generate_question()
