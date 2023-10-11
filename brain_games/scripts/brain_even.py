@@ -1,11 +1,11 @@
-from brain_games.games.game_even import generate_question_even
-from brain_games.engine import start_game
+#!/usr/bin/env python3
 from brain_games.constants import RULE_EVEN
+from brain_games.games.run_script import run_script
 
 
 def main():
-    start_game(RULE_EVEN, generate_question_even)
+    run_script(RULE_EVEN)
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

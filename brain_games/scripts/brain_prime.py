@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
-from brain_games.games.game_prime import generate_question_prime
-from brain_games.engine import start_game
 from brain_games.constants import RULE_PRIME
+from brain_games.games.run_script import run_script
 
 
 def main():
-    start_game(RULE_PRIME, generate_question_prime)
+    run_script(RULE_PRIME)
 
 
 if __name__ == '__main__':
