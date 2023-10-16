@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
-from brain_games.constants import RULE_CALC
-from brain_games.games.run_script import run_script
+from brain_games.games.calc import run_script_calc
 
 
 def main():
-    run_script(RULE_CALC)
+    run_script_calc()
 
 
 if __name__ == '__main__':
