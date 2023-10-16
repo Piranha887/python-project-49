@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
-from brain_games.constants import RULE_PROGRESSION
-from brain_games.games.run_script import run_script
+from brain_games.games.progression import run_script_progression
 
 
 def main():
-    run_script(RULE_PROGRESSION)
+    run_script_progression()
 
 
 if __name__ == '__main__':
