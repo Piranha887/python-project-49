@@ -1,8 +1,14 @@
+from brain_games.constants import RULE_PRIME
+from brain_games.engine import start_game
 from brain_games.utils import generate_random_number
 
 
+def run_script_prime():
+    return start_game(RULE_PRIME, generate_question_prime())
+
+
 def is_prime(number) -> bool:
-    """Проверка, является ли число простым"""
+    """Check if a number is prime"""
     if number < 2:
         return False
     for i in range(2, int(number ** 0.5) + 1):

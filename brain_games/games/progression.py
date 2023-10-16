@@ -1,22 +1,27 @@
 from random import randint
 
-from brain_games.constants import PROGRESSION_LENGTH
+from brain_games.constants import PROGRESSION_LENGTH, RULE_PROGRESSION
+from brain_games.engine import start_game
 from brain_games.utils import generate_random_number
 
 
-def generate_question_progression():
-    """Функция для генерации арифметической прогрессии"""
+def run_script_progression():
+    return start_game(RULE_PROGRESSION, generate_question_progression())
 
-    # Генерируем первый элемент прогрессии
+
+def generate_question_progression():
+    """Function to generate an arithmetic progression"""
+
+    # Generate the first element of the progression
     first_num = generate_random_number()
 
-    # Генерируем разницу (шаг) между элементами прогрессии
+    # Generate the difference (step) between progression elements
     diff = generate_random_number()
 
-    # Генерируем индекс пропущенного элемента в прогрессии
+    # Generate the index of the missing element in the progression
     missed_num_ind = randint(0, PROGRESSION_LENGTH - 1)
 
-    # Создаем арифметическую прогрессию с пропущенным элементом
+    # Create an arithmetic progression with the missing element
     progression = ' '.join([
         '..' if i == missed_num_ind else str(first_num + i * diff)
         for i in range(PROGRESSION_LENGTH)
