@@ -5,8 +5,8 @@ from brain_games.engine import start_game
 from brain_games.utils import generate_random_number
 
 
-def run_script_gcd():
-    return start_game(RULE_GCD, generate_question_gcd())
+def start_gcd_game():
+    return start_game(RULE_GCD, generate_question_gcd)
 
 
 def find_gcd(number1, number2) -> str:

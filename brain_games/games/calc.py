@@ -5,8 +5,8 @@ from brain_games.engine import start_game
 from brain_games.utils import generate_random_number
 
 
-def run_script_calc():
-    return start_game(RULE_CALC, generate_question_calc())
+def start_calc_game():
+    return start_game(RULE_CALC, generate_question_calc)
 
 
 def calculate_expression_and_generate_operator(number1, operators, number2) -> list[str]:

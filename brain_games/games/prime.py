@@ -3,8 +3,8 @@ from brain_games.engine import start_game
 from brain_games.utils import generate_random_number
 
 
-def run_script_prime():
-    return start_game(RULE_PRIME, generate_question_prime())
+def start_prime_game():
+    return start_game(RULE_PRIME, generate_question_prime)
 
 
 def is_prime(number) -> bool:

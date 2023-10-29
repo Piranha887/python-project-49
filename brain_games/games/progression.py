@@ -5,8 +5,8 @@ from brain_games.engine import start_game
 from brain_games.utils import generate_random_number
 
 
-def run_script_progression():
-    return start_game(RULE_PROGRESSION, generate_question_progression())
+def start_progression_game():
+    return start_game(RULE_PROGRESSION, generate_question_progression)
 
 
 def generate_question_progression():

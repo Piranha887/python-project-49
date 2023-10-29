@@ -3,8 +3,8 @@ from brain_games.engine import start_game
 from brain_games.utils import generate_random_number
 
 
-def run_script_even():
-    return start_game(RULE_EVEN, generate_question_even())
+def start_even_game():
+    return start_game(RULE_EVEN, generate_question_even)
 
 
 def is_even(num) -> bool:
