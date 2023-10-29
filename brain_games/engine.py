@@ -4,7 +4,8 @@ from brain_games.constants import COUNT_OF_ROUNDS
 
 
 def start_game(rule, generate_question):
-    name = prompt.string('Welcome to the Brain Games!\nMay I have your name? ')
+    name = prompt.string("Welcome to the Brain Games!"
+                         "May I have your name? ")
 
     print(rule)
 
@@ -16,7 +17,9 @@ def start_game(rule, generate_question):
             print('Correct!')
         else:
             print(
-                f"'{user_answer}' is the wrong answer. Correct answer was '{correct_answer}'\nLet's try again, {name}!")
+                f"'{user_answer}' is the wrong answer."
+                " Correct answer was '{correct_answer}'"
+                "Let's try again, {name}!")
             return
 
     print(f'Congratulations, {name}!')
