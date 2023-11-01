@@ -14,3 +14,6 @@ RULE_PRIME = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 # Constants for game_progression.py
 PROGRESSION_LENGTH = 10
+
+# Constants for calc.py
+OPERATORS = ['+', '-', '*']
