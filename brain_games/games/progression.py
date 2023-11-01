@@ -5,10 +5,6 @@ from brain_games.engine import start_game
 from brain_games.utils import generate_random_number
 
 
-def start_progression_game():
-    return start_game(RULE_PROGRESSION, generate_question_progression)
-
-
 def generate_question_progression():
     """Function to generate an arithmetic progression"""
 
@@ -30,3 +26,7 @@ def generate_question_progression():
     question = progression
     correct_answer = str(first_num + missed_num_ind * diff)
     return question, correct_answer
+
+
+def start_progression_game():
+    return start_game(RULE_PROGRESSION, generate_question_progression)
