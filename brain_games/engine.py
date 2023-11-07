@@ -6,7 +6,7 @@ from brain_games.constants import COUNT_OF_ROUNDS
 def start_game(rule, generate_question):
     name = prompt.string("Welcome to the Brain Games!"
                          "May I have your name? ")
-
+    print(f'Hello, {name}!')
     print(rule)
 
     for _ in range(COUNT_OF_ROUNDS):
