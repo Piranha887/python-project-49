@@ -21,7 +21,7 @@ def calculate_expression(number1, operator, number2):
 
 def generate_question_calc():
     """Generate a random expression and the correct answer."""
-    number1, number2 = generate_random_number()
+    number1, number2 = generate_random_number(), generate_random_number()
     operator = random.choice(OPERATORS)
     correct_answer = calculate_expression(number1, operator, number2)
     expression = f'{number1} {operator} {number2}'
