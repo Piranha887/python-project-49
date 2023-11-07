@@ -10,17 +10,17 @@ def calculate_gcd(number1, number2) -> int:
     return math.gcd(number1, number2)
 
 
-def get_gcd_as_string(number1, number2) -> str:
-    """Get the greatest common divisor of two numbers as a string."""
+def get_gcd(number1, number2) -> int:
+    """Get the greatest common divisor of two numbers"""
     gcd_value = calculate_gcd(number1, number2)
-    return str(gcd_value)
+    return gcd_value
 
 
 def generate_question_gcd():
     """Generates random numbers, a question, and the correct answer"""
-    number1, number2 = generate_random_number()
+    number1, number2 = generate_random_number(), generate_random_number()
     question = f'{number1} {number2}'
-    correct_answer = get_gcd_as_string(number1, number2)
+    correct_answer = str(get_gcd(number1, number2))
     return question, correct_answer
 
 
