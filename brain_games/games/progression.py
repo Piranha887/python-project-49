@@ -1,3 +1,4 @@
+import random
 from random import randint
 
 from brain_games.constants import PROGRESSION_LENGTH, RULE_PROGRESSION
@@ -5,26 +6,29 @@ from brain_games.engine import start_game
 from brain_games.utils import generate_random_number
 
 
+def generate_missing_element_index():
+    """Generate the index of the missing element in the progression"""
+    return randint(0, PROGRESSION_LENGTH - 1)
+
+
+def generate_arithmetic_progression(first_num, diff, missed_num_ind):
+    """Generate an arithmetic progression with a missing element"""
+    progression = ['..' if i == missed_num_ind else str(first_num + i * diff)
+                   for i in range(PROGRESSION_LENGTH)]
+    return ' '.join(progression)
+
+
 def generate_question_progression():
-    """Function to generate an arithmetic progression"""
-
-    # Generate the first element of the progression
+    """Generate a question and the correct answer"""
     first_num = generate_random_number()
-
-    # Generate the difference (step) between progression elements
     diff = generate_random_number()
+    missed_num_ind = generate_missing_element_index()
 
-    # Generate the index of the missing element in the progression
-    missed_num_ind = randint(0, PROGRESSION_LENGTH - 1)
-
-    # Create an arithmetic progression with the missing element
-    progression = ' '.join([
-        '..' if i == missed_num_ind else str(first_num + i * diff)
-        for i in range(PROGRESSION_LENGTH)
-    ])
+    progression = generate_arithmetic_progression(first_num, diff, missed_num_ind)
 
     question = progression
     correct_answer = str(first_num + missed_num_ind * diff)
+
     return question, correct_answer
 
 
