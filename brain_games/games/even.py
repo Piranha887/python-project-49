@@ -9,7 +9,8 @@ def is_even(num) -> bool:
 
 
 def get_random_number_and_even_answer() -> tuple:
-    """Generate a random number and determine if it's even, returning the number and the answer 'yes' or 'no'."""
+    """Generate a random number and determine if it's even,
+     returning the number and the answer 'yes' or 'no'."""
     number = generate_random_number()
     correct_answer = 'yes' if is_even(number) else 'no'
     return number, correct_answer

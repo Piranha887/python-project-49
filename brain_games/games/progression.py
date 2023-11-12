@@ -1,4 +1,3 @@
-import random
 from random import randint
 
 from brain_games.constants import PROGRESSION_LENGTH, RULE_PROGRESSION
@@ -24,7 +23,8 @@ def generate_question_progression():
     diff = generate_random_number()
     missed_num_ind = generate_missing_element_index()
 
-    progression = generate_arithmetic_progression(first_num, diff, missed_num_ind)
+    progression = generate_arithmetic_progression(first_num,
+                                                  diff, missed_num_ind)
 
     question = progression
     correct_answer = str(first_num + missed_num_ind * diff)

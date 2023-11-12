@@ -8,18 +8,16 @@ from brain_games.utils import generate_random_number
 def calculate_expression(number1, operator, number2):
     """Calculate the result of an expression."""
     if operator == '+':
-        result = number1 + number2
+        return number1 + number2
     elif operator == '-':
-        result = number1 - number2
+        return number1 - number2
     elif operator == '*':
-        result = number1 * number2
+        return number1 * number2
     else:
         raise ValueError("Unsupported operator")
 
-    return result
 
-
-def generate_question_calc():
+def generate_random_math_expression_and_answer():
     """Generate a random expression and the correct answer."""
     number1, number2 = generate_random_number(), generate_random_number()
     operator = random.choice(OPERATORS)
@@ -30,4 +28,4 @@ def generate_question_calc():
 
 
 def start_calc_game():
-    return start_game(RULE_CALC, generate_question_calc)
+    return start_game(RULE_CALC, generate_random_math_expression_and_answer)
