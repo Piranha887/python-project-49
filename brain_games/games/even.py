@@ -8,7 +8,7 @@ def is_even(num) -> bool:
     return num % 2 == 0
 
 
-def get_random_number_and_even_answer() -> tuple:
+def get_number_and_even_result() -> tuple:
     """Generate a random number and determine if it's even,
      returning the number and the answer 'yes' or 'no'."""
     number = generate_random_number()
@@ -17,4 +17,4 @@ def get_random_number_and_even_answer() -> tuple:
 
 
 def start_even_game():
-    return start_game(RULE_EVEN, get_random_number_and_even_answer)
+    return start_game(RULE_EVEN, get_number_and_even_result)

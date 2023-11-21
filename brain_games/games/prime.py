@@ -13,11 +13,11 @@ def is_prime(number) -> bool:
     return True
 
 
-def generate_question_prime():
+def get_number_and_prime_result():
     number = generate_random_number()
     correct_answer = "yes" if is_prime(number) else "no"
     return number, correct_answer
 
 
 def start_prime_game():
-    return start_game(RULE_PRIME, generate_question_prime)
+    return start_game(RULE_PRIME, get_number_and_prime_result)

@@ -4,9 +4,9 @@ from brain_games.constants import COUNT_OF_ROUNDS
 
 
 def start_game(rule, generate_question_and_answer):
-    name = prompt.string("Welcome to the Brain Games!"
+    name = prompt.string("Welcome to the Brain Games!\n"
                          "May I have your name? ")
-    print(f"Hello, {name}!"
+    print(f"Hello, {name}!\n"
           f"{rule}")
 
     for _ in range(COUNT_OF_ROUNDS):
@@ -17,8 +17,8 @@ def start_game(rule, generate_question_and_answer):
             print('Correct!')
         else:
             print(
-                f"'{user_answer}' is the wrong answer."
-                f" Correct answer was '{correct_answer}'."
+                f"'{user_answer}' is the wrong answer ;(. "
+                f"Correct answer was '{correct_answer}'.\n"
                 f"Let's try again, {name}!")
             return
 

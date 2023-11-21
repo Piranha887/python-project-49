@@ -17,7 +17,7 @@ def generate_arithmetic_progression(first_num, diff, missed_num_ind):
     return ' '.join(progression)
 
 
-def generate_question_progression():
+def get_numbers_and_progression_result():
     """Generate a question and the correct answer"""
     first_num = generate_random_number()
     diff = generate_random_number()
@@ -33,4 +33,4 @@ def generate_question_progression():
 
 
 def start_progression_game():
-    return start_game(RULE_PROGRESSION, generate_question_progression)
+    return start_game(RULE_PROGRESSION, get_numbers_and_progression_result)

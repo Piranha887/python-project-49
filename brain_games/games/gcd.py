@@ -10,13 +10,13 @@ def get_gcd(number1, number2) -> int:
     return math.gcd(number1, number2)
 
 
-def generate_question_gcd():
+def get_num_pairs_and_gcd_result():
     """Generates random numbers, a question, and the correct answer"""
     number1, number2 = generate_random_number(), generate_random_number()
-    question = f'{number1} {number2}'
+    num_pairs = f'{number1} {number2}'
     correct_answer = str(get_gcd(number1, number2))
-    return question, correct_answer
+    return num_pairs, correct_answer
 
 
 def start_gcd_game():
-    return start_game(RULE_GCD, generate_question_gcd)
+    return start_game(RULE_GCD, get_num_pairs_and_gcd_result)

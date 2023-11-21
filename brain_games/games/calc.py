@@ -5,27 +5,27 @@ from brain_games.engine import start_game
 from brain_games.utils import generate_random_number
 
 
-def calculate_expression(number1, operator, number2):
+def calculate_math_expression(number1, operator, number2):
     """Calculate the result of an expression."""
     if operator == '+':
-        return number1 + number2
+        return str(number1 + number2)
     elif operator == '-':
-        return number1 - number2
+        return str(number1 - number2)
     elif operator == '*':
-        return number1 * number2
+        return str(number1 * number2)
     else:
         raise ValueError("Unsupported operator")
 
 
-def generate_random_math_expression_and_answer():
+def get_math_expression_and_result():
     """Generate a random expression and the correct answer."""
     number1, number2 = generate_random_number(), generate_random_number()
     operator = random.choice(OPERATORS)
-    correct_answer = calculate_expression(number1, operator, number2)
+    correct_answer = calculate_math_expression(number1, operator, number2)
     expression = f'{number1} {operator} {number2}'
 
     return expression, correct_answer
 
 
 def start_calc_game():
-    return start_game(RULE_CALC, generate_random_math_expression_and_answer)
+    return start_game(RULE_CALC, get_math_expression_and_result)
