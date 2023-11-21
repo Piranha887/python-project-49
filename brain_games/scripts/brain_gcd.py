@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-from brain_games.games.prime import start_prime_game
+from brain_games.games.gcd import start_gcd_game
 
 
 def main():
-    start_prime_game()
+    start_gcd_game()
 
 
 if __name__ == '__main__':
