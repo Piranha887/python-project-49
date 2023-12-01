@@ -10,13 +10,13 @@ def get_gcd(number1, number2) -> int:
     return math.gcd(number1, number2)
 
 
-def get_num_pairs_and_gcd_answer() -> tuple:
+def get_gcd_answer() -> tuple:
     """Generates random numbers, a question, and the correct answer"""
     number1, number2 = generate_random_number(), generate_random_number()
     num_pairs = f'{number1} {number2}'
-    correct_answer = str(get_gcd(number1, number2))
-    return num_pairs, correct_answer
+    correct_answer = get_gcd(number1, number2)
+    return num_pairs, str(correct_answer)
 
 
 def start_gcd_game():
-    return start_game(RULE_GCD, get_num_pairs_and_gcd_answer)
+    return start_game(RULE_GCD, get_gcd_answer)
