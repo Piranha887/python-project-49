@@ -5,8 +5,9 @@ from brain_games.engine import start_game
 from brain_games.utils import generate_random_number
 
 
-def generate_arithmetic_progression(first_num, diff, missed_num_ind,
-                                    progression_length):
+def generate_progression_with_missed_num(
+        first_num, diff, missed_num_ind, progression_length
+) -> str:
     """Generate an arithmetic progression with a missing element"""
     progression = ['..' if i == missed_num_ind else
                    str(first_num + i * diff)
@@ -18,18 +19,18 @@ def get_progression_and_missed_num():
     """Generate a question and the correct answer"""
     first_num = generate_random_number()
     diff = generate_random_number()
-    missed_num_ind = randint(0, PROGRESSION_LENGTH - 1)
+    missed_num = randint(0, PROGRESSION_LENGTH - 1)
 
-    progression = generate_arithmetic_progression(first_num,
-                                                  diff, missed_num_ind,
-                                                  PROGRESSION_LENGTH)
+    progression = generate_progression_with_missed_num(
+        first_num, diff, missed_num, PROGRESSION_LENGTH
+    )
 
-    question = progression
-    correct_answer = first_num + missed_num_ind * diff
+    correct_answer = first_num + missed_num * diff
 
-    return question, str(correct_answer)
+    return progression, str(correct_answer)
 
 
 def start_progression_game():
-    return start_game(RULE_PROGRESSION,
-                      get_progression_and_missed_num)
+    return start_game(
+        RULE_PROGRESSION, get_progression_and_missed_num
+    )

@@ -21,10 +21,10 @@ def get_math_expression_and_result():
     """Generate a random expression and the correct answer."""
     number1, number2 = generate_random_number(), generate_random_number()
     operator = random.choice(OPERATORS)
-    correct_result = calculate_math_expression(number1, operator, number2)
+    result = calculate_math_expression(number1, operator, number2)
     expression = f'{number1} {operator} {number2}'
 
-    return expression, str(correct_result)
+    return expression, str(result)
 
 
 def start_calc_game():
